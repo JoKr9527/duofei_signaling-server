@@ -1,4 +1,8 @@
 server:
   port: 8083
-  servlet:
-    context-path: /signaling
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-password: signalingServer
+    key-store-type: PKCS12
+    key-alias: signalingServer
+  context-path: /signaling

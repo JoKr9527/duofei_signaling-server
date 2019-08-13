@@ -243,7 +243,7 @@ function hangup() {
 
 //websocket 连接建立
 function connect() {
-    ws = new WebSocket("ws://192.168.3.72:8083/signaling/complexSdpExchange");
+    ws = new WebSocket("wss://192.168.3.72:8083/signaling/complexSdpExchange");
     ws.onopen = function () {
         console.log("connect success ... ");
         // 初始化当前用户身份
